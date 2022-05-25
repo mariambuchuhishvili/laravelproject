@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     </head>
     <body style="background-color: #9e7bc1">
-    <header> @yield('header')</header>
+    <header style="background-color: #814cad;">  @yield('header')</header>
 
     @yield('content')
 
