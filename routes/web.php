@@ -19,4 +19,12 @@ Route::get('/', function () {
 
 Route::get('/my_page', function () {
     return view('my_page');
-});
+})->name('my_page');
+
+Route::get('/zakaz', function () {
+    return view('zakaz');
+})->name('zakaz');
+
+Route::post('/zakaz/submit', function () {
+    return "okey";
+})->name('zakaz-form');

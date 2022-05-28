@@ -12,9 +12,11 @@
         </a>
 
         <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-            <a class="me-3 py-2 text-dark text-decoration-none" href="#">Готовые букеты</a>
+            <a class="me-3 py-2 text-dark text-decoration-none" href="{{route('my_page')}}">Готовые букеты</a>
             <a class="me-3 py-2 text-dark text-decoration-none" href="#">Составить букет</a>
             <a class="me-3 py-2 text-dark text-decoration-none" href="#">О нас</a>
+            <a class="me-3 py-2 text-dark text-decoration-none" href="{{route('zakaz')}}">Сделать заказ</a>
+
         </nav>
     </div>
 @endsection
