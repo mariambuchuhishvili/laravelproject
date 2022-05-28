@@ -38,7 +38,7 @@
                             <button type="button" class="btn btn-sm btn-outline-secondary">Подробно</button>
                             <button type="button" class="btn btn-sm btn-outline-secondary" style="background-color: violet">В корзину</button>
                         </div>
-                        <small class="text-muted">2800 руб.</small>
+                        <small class="text-muted">2900 руб.</small>
                     </div>
                 </div>
             </div>
