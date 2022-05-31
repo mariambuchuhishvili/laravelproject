@@ -12,7 +12,7 @@
         </div>
         @endif
 
-    <form action="{{ route('zakaz-form') }}" method="post">
+    <form action="{{ route('zakaz-form') }}" method="POST">
         @csrf
         <div class="form-group">
             <label for="name">Введите имя </label>

@@ -3,15 +3,22 @@
 namespace App\Http\Controllers;
 
 
-use JetBrains\PhpStorm\NoReturn;
 use App\Http\Requests\ZakazRequest;
+use App\Models\ZakazUsers;
+use Illuminate\Http\RedirectResponse;
+
 
 class ZakazController extends Controller
 {
-    #[NoReturn] public function submit(ZakazRequest $req)
-    {
-        /*$validation=$req->validate(['message'=> 'required|min:5|max:500',
-                                    'name'=>'required|min:2',
-                                     'email'=>'required']);*/
+     public function submit(ZakazRequest $req): RedirectResponse
+     {
+        $zakUser=new ZakazUsers();
+        $zakUser->name=$req->input('name');
+        $zakUser->email=$req->input('email');
+        $zakUser->message=$req->input('message');
+
+        $zakUser->save();
+
+        return redirect()->route('my_page');
     }
 }
