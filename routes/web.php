@@ -25,6 +25,6 @@ Route::get('/zakaz', function () {
     return view('zakaz');
 })->name('zakaz');
 
-Route::post('/zakaz/submit', function () {
-    return "okey";
-})->name('zakaz-form');
+
+Route::post('/zakaz/submit', 'App\Http\Controllers\ZakazController@submit' )->name('zakaz-form');
+
